@@ -2,7 +2,7 @@
 
 The basic Idea is if you have to  create an element that perform the same role and same set of properties throught the web.Like we have video tag simply you add an tag into your html and it present you whole video controls and its UI.A lot of element desribe their own function.
 
-So,let better understand it with a example like you have to add a css customized loader to around 5-10 what you do you simply insert its html to every respective  page.If I give you a suggestion that make loader a tag and wherever you want to use the loader simply give its tag name and loader appears there.You surely think that I am mocking you and if not you think how can I acheive this.
+So,let better understand it with a example like you have to add a css customized loader to around 5-10 webpages what you do You simply insert its html to every respective  page.If I give you a suggestion that make loader a tag and wherever you want to use the loader simply give its tag name and loader appears there.You surely think that I am mocking you and if not you think how can I acheive this.
 
 To acheive this we have to make a custom element of loader and we can use it wherever we want.The document.registerElement() method is used to create a custom HTML element.Like we are here creating a loader and embedding into web page
 
