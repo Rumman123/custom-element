@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Loader</title>
+    <link rel="import" id="template-file" href="./template/loader-template.html">
+</head>
+<body>
+
+<x-loader></x-loader>
+<script>
+    if(document.registerElement){
+        var getImport=document.querySelector('#template-file');
+        var createProto=Object.create(HTMLElement.prototype);
+        createProto.createdCallback=function(){
+           var root=this.createShadowRoot();
+            var template=getImport.import.querySelector('#content');
+            console.log(template);
+            var clone=document.importNode(template.content,true);
+            root.appendChild(clone);
+        }
+        var loader=document.registerElement('x-loader',{
+            prototype:createProto});
+    }
+</script>
+</body>
+</html>
