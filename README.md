@@ -1,4 +1,4 @@
-# custom-element
+# Custom-element
 
 The basic Idea is if you have to  create an element that perform the same role and same set of properties throught the web.Like we have video tag simply you add an tag into your html and it present you whole video controls and its UI.A lot of element desribe their own function.
 
